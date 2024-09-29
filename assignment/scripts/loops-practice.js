@@ -33,35 +33,53 @@ for (let i=2; i<11; i+=2 ) {
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0'); 
-for (let i=5; i>0; i--) {
+for (let i=5; i>-1; i--) {
   console.log(i);
 }
 
+
 // 2. For of loops  
 console.log('---- 2. For Of loop ----');
-let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb'];
-for ( star of stars ) {
-  console.log( stars );
+// 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
+const stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb'];
+// using for...of
+for ( let element of stars ) {
+    // display the values
+    console.log(element);
 }
 
-// 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
-console.log('Some stars:');
-for( star of stars ){
-  console.log( 'Some stars:', stars );
-}
 
 // 3. While loops  
 console.log('---- 3. While loop ----');
-let i=0
-while( i<0 ){
-  console.log( i );
-}
-
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
+const star = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb'];
+
+let Somestars = stars.unshift();
+console.log( 'Some stars using while:', stars );
+//while loop
+let i = 0;
+while( i<stars.length ){
+    console.log( stars[i] );
+    i++;
+}
+
+
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
+let index = 0;
+while( index < 6 ){
+  console.log( index );
+  index++;
+}
+
+
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+let index2 = 10;
+while( index2 > 4 ){
+  console.log( index2 );
+  index2--;
+}
