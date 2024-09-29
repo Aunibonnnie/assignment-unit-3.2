@@ -1,6 +1,5 @@
 console.log('****** Loops Practice *******');
 
-
 // 1. 'for' loop
 console.log('---- 1. For loops ----');
 // Example: a for loop to console.log numbers from 0 to 3
@@ -12,6 +11,7 @@ for (let i=0; i<4; i++) {
 
 // 1.a. TODO: Write a for loop to console.log the numbers from 0 to 5 
 //   - Which part of the example loop do you need to change to do this?
+console.log('count from 0 to 5');
 for (let i=0; i<6; i++) {
   console.log(i);
 }
@@ -65,7 +65,6 @@ while( i<stars.length ){
 }
 
 
-
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
 let index = 0;
@@ -73,7 +72,6 @@ while( index < 6 ){
   console.log( index );
   index++;
 }
-
 
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
